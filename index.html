@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!--Morris Chart CSS -->
+        <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+        <script src="assets/js/modernizr.min.js"></script>
+        <script src="assets/js/signelabs.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=es"></script>
+    </head>
+
+
+    <body>
+    <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container-fluid">
+                    <!-- Logo container-->
+                    <div class="logo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                        <!--UBold-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo_dark.png" alt="" height="20" class="logo-lg">
+                            <img src="assets/images/logo_sm.png" alt="" height="24" class="logo-sm">
+                        </a>
+
+                    </div>
+                    <!-- End Logo container-->
+                    <div class="menu-extras topbar-custom">
+                        <ul class="list-inline float-right mb-0">
+                            <li class="menu-item list-inline-item">
+                                <!-- Mobile menu toggle-->
+                                <a class="navbar-toggle nav-link">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <!-- End mobile menu toggle-->
+                            </li>
+                            <li class="list-inline-item dropdown notification-list">
+                                <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                                   aria-haspopup="false" aria-expanded="false">
+                                    <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="md md-account-circle"></i> <span>Profile</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="md md-settings"></i> <span>Settings</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="md md-lock-open"></i> <span>Lock Screen</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="md md-settings-power"></i> <span>Logout</span>
+                                    </a>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- end menu-extras -->
+                    <div class="clearfix"></div>
+                </div> <!-- end container -->
+            </div>
+            <!-- end topbar-main -->
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+
+                            <li class="has-submenu">
+                                <a onclick="loadPage('ronda');"><i class="md  md-gps-fixed"></i>Ronda</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a ><i class="md  md-brightness-4"></i>Cambio de turno</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="md  md-report"></i>Novedades</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a onclick="loadPage('novedades')">Ver novedades</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="loadPage('agregarNovedad')">Agregar novedad</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="md  md-speaker-notes"></i>Consignas</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a>Pendientes</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="loadPage('consignas')">Realizadas</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+    <!-- End Navigation Bar-->
+        <div class="wrapper">
+            <div class="container-fluid" id="contenedor">
+
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <h4 class="page-title">Inicio</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title end breadcrumb -->
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        © 2016 - 2018 UBold - Coderthemes.com
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script><!-- Popper for Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <script src="assets/plugins/peity/jquery.peity.min.js"></script>
+
+        <!-- jQuery  -->
+        <script src="assets/plugins/waypoints/lib/jquery.waypoints.min.js"></script>
+        <script src="assets/plugins/counterup/jquery.counterup.min.js"></script>
+
+        
+        <script src="assets/plugins/raphael/raphael-min.js"></script>
+
+        <script src="assets/plugins/jquery-knob/jquery.knob.js"></script>
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $('.counter').counterUp({
+                    delay: 100,
+                    time: 1200
+                });
+
+                $(".knob").knob();
+
+            });
+        </script>
+
+    </body>
+</html>
